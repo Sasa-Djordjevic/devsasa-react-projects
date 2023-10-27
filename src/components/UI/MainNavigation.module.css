@@ -1,0 +1,191 @@
+header {
+    border-bottom: 1px solid var(--grey-300);
+}
+
+.nav {
+    height: 8vh;
+    width: 90%;
+    max-width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.logo h2{
+    font-size: 2rem;
+    text-transform: lowercase;
+    color: var(--mytextColor);
+}
+
+.react {
+    margin-bottom: -10px;
+    margin-right: -4px;
+    width: 45px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links li {
+    margin-left: 1.5rem;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 0.7rem 0.75rem 1rem
+}
+
+.dropdown-btn > a, .home-btn {
+    font-size: 1.1rem;
+}
+
+.home-logo {
+    padding: 0.5rem 0.7rem 0.5rem 1rem;
+    color: var(--mytextColor);
+    transition: all 0.4s ease-in-out;
+}
+
+.home-logo:hover {
+    color: var(--myaccent);
+}
+
+.home-logo:active {
+    color: var(--myaccent);
+}
+
+.active {
+    color: var(--myaccent);
+}
+
+.dropdown-content {
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    background-color: var(--backgroundColor1);
+    border: 1px solid var(--grey-400);
+    border-radius: 8px;
+    display: none;
+    flex-direction: column;
+    padding: 0.75rem 0;
+}
+
+.dropdown-content a {
+    padding: 0.5rem 0 0.5rem 1rem;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--grey-200);
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+  }
+
+.burger {
+    cursor: pointer;
+    display: none;
+}
+
+.burger div {
+    width: 30px;
+    height: 3px;
+    background-color: var(--primary-500);
+    transition: all 0.3s ease;
+}
+
+.line1, .line2 {
+    margin-bottom: 5px;
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@media screen and (max-width: 992px) {
+    .links li {
+        margin-left: 1rem;
+    }
+
+    .logo h2{
+        font-size: 1.75rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    .links {
+        position: absolute;
+        /* position: fixed; */
+        z-index: 5;
+        right: 0;
+        top: 8vh;
+        bottom: 0;
+        min-height: 92vh;
+        width: 80%;
+        /* height: 100%; */
+        /* width: 100%; */
+        background-color: var(--backgroundColor1);
+        display: none;
+        /* display: flex; */
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        border-left: 1px solid var(--grey-300);
+        border-top: 1px solid var(--grey-300);
+        /* transform: translateX(100%); */
+        transition: all 0.4s ease-in;
+    }
+
+    .linksopen {
+        /* transform: translateX(0%); */
+        display: flex;
+    }
+
+    .dropdown-content {
+        display: flex;
+        position: relative;
+        margin-left: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .dropdown-content a:hover {
+        background-color: var(--backgroundColor1);
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .dropdown-btn > a, .home-btn {
+        width: 100%;
+    }
+
+    .dropdown-btn, .home-btn {
+        padding: 1rem 0.7rem 1rem 1rem;
+    }
+    
+}

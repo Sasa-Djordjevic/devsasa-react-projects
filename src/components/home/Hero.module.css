@@ -1,0 +1,140 @@
+.hero {
+    background-color: var(--white);
+    padding: 3rem 0;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.flex > div {
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.title {
+    font-size: 1.25rem;
+    line-height: 1.75;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+
+.title > p {
+    margin-bottom: 2rem;
+}
+
+.title h1 {
+    font-size: 1.75rem;
+    line-height: 1.75;
+    display: inline;
+    color: var(--mytextColor);
+    font-weight: 500;
+}
+
+.title h1 > span {
+    color: var(--primary-500);
+}
+
+.title-btn1 {
+    cursor: pointer;
+    color: var(--white);
+    font-size: 1rem;
+    border: transparent;
+    border-radius: var(--borderRadius);
+    letter-spacing: var(--letterSpacing);
+    padding: 0.5rem 1.5rem;
+    box-shadow: var(--shadow-1);
+    transition: var(--transition);
+    text-transform: capitalize;
+    display: inline-block;
+    background-color: var(--primary-500);
+    margin-bottom: 1.5rem;
+}
+
+.title-btns > a:nth-child(1) {
+    margin-right: 2rem;
+}
+
+.title-btn1:hover {
+    /* background-color: var(--primary-600); */
+    background-color: var(--myaccent);
+}
+
+.image {
+    text-align: center;
+}
+
+.img {
+    width: 100%;
+    max-width: 450px;
+}
+
+
+/* css media -------------------- */
+
+@media screen and (min-width: 480px) {
+    .hero {
+        padding: 4rem 0;
+    }
+
+    .title-btn1 {
+        padding: 0.5rem 2rem;
+        font-size: 1.15rem;
+    }
+
+    .flex {
+        padding: 0 1.5rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        padding: 6rem 0;
+    }
+
+    .img {
+        max-width: 500px;
+    }
+
+    .title {
+        padding-right: 3rem;
+        padding-bottom: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 928px) {
+    .flex {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .flex > div {
+        width: 50%;
+    }
+
+    .title {
+        padding-bottom: 3rem;
+    }
+
+    .img {
+        max-width: 550px;
+    }
+
+    .title > p {
+        text-wrap: balance;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    .flex > div {
+        width: 45%;
+    }
+}

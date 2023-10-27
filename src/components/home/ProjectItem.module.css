@@ -1,0 +1,47 @@
+.projest {
+    /* border: 1px solid var(--grey-300); */
+    padding: 2rem 0 1rem 0;
+    /* background-color: #cde7db; */
+    background: var(--white);
+}
+
+.projest:hover {
+    box-shadow: var(--shadow-3);
+    transition: all 0.5s ease-in-out;
+}
+
+.icon {
+    font-size: 3rem;
+    text-align: center;
+    color: var(--myaccent);
+}
+
+.projest h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.div {
+    text-align: center;
+}
+
+.icon-btn1 {
+    cursor: pointer;
+    color: var(--white);
+    border: transparent;
+    border-radius: var(--borderRadius);
+    letter-spacing: var(--letterSpacing);
+    padding: 0.5rem 1rem;
+    box-shadow: var(--shadow-1);
+    transition: var(--transition);
+    text-transform: capitalize;
+    display: inline-block;
+    background-color: var(--primary-500);
+    margin-bottom: 1.5rem;
+}
+
+.icon-btn1:hover {
+    background-color: var(--myaccent);
+}

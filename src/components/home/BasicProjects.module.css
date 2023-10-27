@@ -1,0 +1,38 @@
+.grid-container {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); */
+    grid-template-columns: minmax(auto, 330px);
+    justify-content: center;
+    gap: 3rem 2rem;
+    padding: 0 1.5rem;
+}
+
+.h2 {
+    font-size: 1.75rem;
+    margin: 4rem 0 3rem 0;
+    text-align: center;
+}
+
+.h2 span {
+    color: var(--primary-500);
+}
+
+/* css media -------------------- */
+
+@media screen and (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, minmax(auto, 330px));
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    .h2 {
+        margin: 5rem 0 3rem 0;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(3, minmax(auto, 330px));
+    }
+    
+}

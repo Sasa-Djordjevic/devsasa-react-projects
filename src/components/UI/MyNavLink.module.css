@@ -1,0 +1,15 @@
+.color {
+    color: var(--mytextColor);
+}
+
+.color:hover {
+    color: var(--myaccent);
+}
+
+.color:active {
+    color: var(--myaccent);
+}
+
+.active {
+    color: var(--myaccent);
+}

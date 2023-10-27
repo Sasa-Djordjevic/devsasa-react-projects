@@ -1,0 +1,12 @@
+.section-center {
+    width: 80vw;
+    max-width: 40rem;
+    margin: 3rem auto;
+}
+
+.section-center h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.25rem;
+    margin-top: 3rem;
+}
