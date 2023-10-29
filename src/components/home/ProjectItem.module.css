@@ -1,7 +1,5 @@
 .projest {
-    /* border: 1px solid var(--grey-300); */
     padding: 2rem 0 1rem 0;
-    /* background-color: #cde7db; */
     background: var(--white);
 }
 
@@ -20,7 +18,7 @@
     font-size: 1.5rem;
     text-align: center;
     margin-top: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
 }
 
 .div {
@@ -44,4 +42,12 @@
 
 .icon-btn1:hover {
     background-color: var(--myaccent);
+}
+
+.div a:nth-child(1) {
+    margin-right: 1rem;
+}
+
+.div a:nth-child(2) {
+    margin-left: 1rem;
 }

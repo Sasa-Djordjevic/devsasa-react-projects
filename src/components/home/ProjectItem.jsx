@@ -11,8 +11,6 @@ const ProjectItem = (props) => {
             <h3>{props.item.name}</h3>
             <div className={mystyles.div}>
                 <Link to={props.item.url} className={mystyles['icon-btn1']} >Project</Link>
-            </div>
-            <div className={mystyles.div}>
                 <a href={props.item.giturl} target="_blank" className={mystyles['icon-btn1']} >GitHub</a>
             </div>
         </div>

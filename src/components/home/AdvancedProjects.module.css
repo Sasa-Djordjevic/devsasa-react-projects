@@ -3,7 +3,7 @@
     grid-template-columns: minmax(auto, 330px);
     justify-content: center;
     gap: 3rem 2rem;
-    margin-bottom: 6rem;
+    margin-bottom: 1rem;
     padding: 0 1.5rem;
 }
 
@@ -22,7 +22,7 @@
 @media screen and (min-width: 768px) {
     .grid-container {
         grid-template-columns: repeat(2, minmax(auto, 330px));
-        margin-bottom: 8rem;
+        margin-bottom: 3rem;
     }
     
 }
