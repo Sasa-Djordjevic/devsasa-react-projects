@@ -35,11 +35,12 @@ const MainNavigation = () => {
     return (
         <header>
             <nav className={mystyles.nav}>
-                <div className={mystyles.logo}>
-                    <NavLink to='/'>
-                        <h2><img src="./images/logo-image-1.png" alt="react logo" className={mystyles.react} /> projects</h2>
-                    </NavLink>
-                </div>
+                <NavLink to='/' className={mystyles.logo}>
+                    <div className={mystyles.react}>
+                        <img src="./images/logo-image-1.png" alt="react logo" />
+                    </div>
+                    <h2> projects</h2>
+                </NavLink>
                 <ul className={navClasses}>
                     <li className={mystyles['home-btn']}>
                         <NavLink
