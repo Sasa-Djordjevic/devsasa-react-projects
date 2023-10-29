@@ -1,4 +1,4 @@
-const url = 'http://127.0.0.1:3000';
+const url = 'https://devsasa-react-projects.netlify.app';
 
 // basic projects icons
 import { LiaBirthdayCakeSolid } from 'react-icons/lia';
@@ -15,7 +15,7 @@ import { FiShoppingBag } from 'react-icons/fi';
 
 export const title = {
     url: 'https://www.udemy.com/course/react-tutorial-and-projects-course/',
-    giturl: 'https://github.com/Sasa-Djordjevic/react-tutorial-and-projects/tree/main'
+    giturl: 'https://github.com/Sasa-Djordjevic/devsasa-react-projects.git'
 };
 
 export const title1 = 'My collection of interesting projects from the course React 18 Tutorial and Projects. Feel free to follow the links and explore the projects.';
