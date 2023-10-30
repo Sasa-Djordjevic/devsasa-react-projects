@@ -313,12 +313,9 @@ footer {
 /* css media -------------------- */
 
 @media screen and (max-width: 768px) {
-  html, body {
-      overflow: hidden;
-  }
-
   body {
-    width: 100%;
+      overflow-x: hidden;
+      width: 100%;
   }
 
   .h1 {
