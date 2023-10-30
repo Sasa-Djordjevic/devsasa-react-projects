@@ -312,6 +312,20 @@ footer {
 
 /* css media -------------------- */
 
+@media screen and (max-width: 768px) {
+  html, body {
+      overflow-x: hidden;
+  }
+
+  body {
+    width: 100%;
+  }
+
+  .h1 {
+    font-size: 1.75rem;
+  }
+}
+
 @media screen and (min-width: 992px) {
   /* tabs */
   .jobs-center {
@@ -322,12 +336,3 @@ footer {
   }
 }
 
-@media screen and (max-width: 768px) {
-  body {
-      overflow-x: hidden;
-  }
-
-  .h1 {
-    font-size: 1.75rem;
-  }
-}
